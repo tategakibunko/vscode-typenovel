@@ -46,7 +46,7 @@
         ]
     },
     "dependencies": {
-        "typenovel": "^1.1.11"
+        "typenovel": "^1.1.12"
     },
     "devDependencies": {
         "@types/node": "^12.12.5",

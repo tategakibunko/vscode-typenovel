@@ -3,13 +3,3 @@ Makefile
 **/*.map
 **/tsconfig.json
 .vscode/**/*
-node_modules/typenovel/*.md
-node_modules/typenovel/*.txt
-node_modules/typenovel/.vscode
-node_modules/typenovel/CHANGES
-node_modules/typenovel/**/Makefile
-node_modules/typenovel/local
-node_modules/typenovel/docs
-node_modules/typenovel/syntaxes
-node_modules/typenovel/tn-examples
-node_modules/typenovel/ts-examples
