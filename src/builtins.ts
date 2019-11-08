@@ -437,10 +437,10 @@ export const BuiltinAnnotSignatures: { [key: string]: BuiltinSignature } = {
 export class Builtins {
   static getSignature(key: string): BuiltinSignature | undefined {
     const head = key.charAt(0);
-    if (head === '@') {
+    if (head === BLOCK_SYMBOL) {
       return BuiltinBlockSignatures[key];
     }
-    if (head === '$') {
+    if (head === ANNOT_SYMBOL) {
       return BuiltinAnnotSignatures[key];
     }
     return undefined;
