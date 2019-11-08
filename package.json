@@ -16,14 +16,13 @@
         "Programming Languages"
     ],
     "activationEvents": [
-        "workspaceContains:**/*.tn",
         "onLanguage:typenovel"
     ],
     "scripts": {
         "compile": "tsc -p ./",
         "vscode:prepublish": "tsc -p ./"
     },
-    "main": "./out/src/extension",
+    "main": "./out/extension",
     "contributes": {
         "languages": [
             {
