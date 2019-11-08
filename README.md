@@ -9,4 +9,4 @@
 - Syntax highlighting and language configuration(auto closing for bracket).
 - Error checking when saving target file.
 
-![capture](https://github.com/tategakibunko/vscode-typenovel/blob/master/images/capture.gif)
+![capture](https://raw.githubusercontent.com/tategakibunko/vscode-typenovel/master/images/capture.gif)

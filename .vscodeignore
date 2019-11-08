@@ -1,4 +1,4 @@
-.vscode/**
-.vscode-test/**
-.gitignore
+**/*.ts
 **/tsconfig.json
+.vscode/**/*
+.gitignore
