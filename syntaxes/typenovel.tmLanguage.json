@@ -1,0 +1,62 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "TypeNovel",
+	"patterns": [
+		{
+			"include": "#comments"
+		},
+		{
+			"include": "#strings"
+		},
+		{
+			"include": "#blocks"
+		},
+		{
+			"include": "#annots"
+		}
+	],
+	"repository": {
+		"comments": {
+			"patterns": [
+				{
+					"begin": "//",
+					"end": "$",
+					"name": "comment.line.double-slash.go.mod"
+				},
+				{
+					"begin": "/\\*",
+					"end": "\\*/",
+					"name": "comment.block"
+				}
+			]
+		},
+		"annots": {
+			"patterns": [
+				{
+					"name": "variable.name",
+					"match": "\\$([\\w\\-]+)"
+				}
+			]
+		},
+		"blocks": {
+			"patterns": [
+				{
+					"name": "entity.name.function",
+					"match": "@([\\w\\-]+)"
+				}
+			]
+		},
+		"strings": {
+			"name": "string.quoted.double.typenovel",
+			"begin": "\"",
+			"end": "\"",
+			"patterns": [
+				{
+					"name": "constant.character.escape.typenovel",
+					"match": "\\\\."
+				}
+			]
+		}
+	},
+	"scopeName": "source.typenovel"
+}

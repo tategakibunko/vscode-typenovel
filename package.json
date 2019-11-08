@@ -1,0 +1,57 @@
+{
+    "name": "vscode-typenovel",
+    "displayName": "TypeNovel",
+    "description": "TypeNovel support for Visual Stdio Code",
+    "version": "0.0.1",
+    "publisher": "tategakibunko",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/tategakibunko/vscode-typenovel"
+    },
+    "engines": {
+        "vscode": "^1.39.0"
+    },
+    "icon": "images/logo.png",
+    "categories": [
+        "Programming Languages"
+    ],
+    "activationEvents": [
+        "workspaceContains:**/*.tn",
+        "onLanguage:typenovel"
+    ],
+    "scripts": {
+        "compile": "tsc -p ./",
+        "vscode:prepublish": "tsc -p ./"
+    },
+    "main": "./out/extension.js",
+    "contributes": {
+        "languages": [
+            {
+                "id": "typenovel",
+                "aliases": [
+                    "TypeNovel",
+                    "typenovel"
+                ],
+                "extensions": [
+                    ".tn"
+                ],
+                "configuration": "./language-configuration.json"
+            }
+        ],
+        "grammars": [
+            {
+                "language": "typenovel",
+                "scopeName": "source.typenovel",
+                "path": "./syntaxes/typenovel.tmLanguage.json"
+            }
+        ]
+    },
+    "dependencies": {
+        "typenovel": "^1.1.11"
+    },
+    "devDependencies": {
+        "@types/node": "^12.12.5",
+        "@types/vscode": "^1.39.0",
+        "typescript": "^3.6.4"
+    }
+}
